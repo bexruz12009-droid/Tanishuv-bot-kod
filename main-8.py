@@ -24,8 +24,8 @@ logging.basicConfig(
 )
 
 # Token va admin ID endi muhit o'zgaruvchilaridan olinadi (kodga yozilmaydi).
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-ADMIN_ID = int(os.getenv("TELEGRAM_ADMIN_ID", "7825563654"))
+BOT_TOKEN = "8705109533:AAGuGCLtMq07VKbwsTniA70Jp-rBhy8M5JI"
+ADMIN_ID = 7825563654
 ADMIN_USERNAME = (
     os.getenv("TELEGRAM_ADMIN_USERNAME")
     or os.getenv("ADMIN_USERNAME", "Bexr7zz")
@@ -1227,7 +1227,7 @@ async def reject_premium(call: types.CallbackQuery):
 # ─── RO'YXATDAN O'TISH (FOYDALANUVCHI PROFILI) ───────────────────────────────
 
 # Tanishuv xizmati faqat voyaga yetganlar (18+) uchun.
-MIN_AGE = 18
+MIN_AGE = 2
 MAX_AGE = 90
 
 @dp.message(UserRegistration.waiting_for_gender, F.text.in_(["🙋‍♂️ Yigit", "🙋‍♀️ Qiz"]))
